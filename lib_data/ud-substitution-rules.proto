@@ -733,7 +733,7 @@ rulegroup {
   rule {
     name: "conjunctions"
     priority: 10
-    tregex: "/^w-.*/=word $ /^t-(?:CONJ|SCONJ)$/"
+    tregex: "/^w-.*/=word $ /^t-(?:CONJ|SCONJ|CCONJ)$/"
     transformation {
       target: "word"
       action: ASSIGN_LAMBDA

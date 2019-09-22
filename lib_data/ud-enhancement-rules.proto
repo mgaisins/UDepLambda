@@ -10,7 +10,7 @@ rulegroup {
     # ¿Cuántas ciudades
     # Howmany cities (how many is a single word in spanish)
     # change the postag of from ADV to ADV:COUNT:WH.
-    tregex: "/w-.*-(?:cuánto|cuánta|cuántos|cuántas|cuanto|cuanta|cuantos|cuantas)$/=word !>> /^l-acl.*$/ $ /t-(?:PRON|DET|ADV|ADJ)/=postag"
+    tregex: "/w-.*-(?:כמה|cuánto|cuánta|cuántos|cuántas|cuanto|cuanta|cuantos|cuantas)$/=word !>> /^l-acl.*$/ $ /t-(?:PRON|DET|ADV|ADJ)/=postag"
     transformation {
       target: "postag"
       action: CHANGE_LABEL 
@@ -22,7 +22,7 @@ rulegroup {
     priority: 5
 	# "when" did aldi originate?
     # change the postag of "when" from ADV to ADV:WH.
-    tregex: "/w-.*-(?:what|when|who|where|which|how|whom|whose|why|quién|qué|dónde|cuándo|cuánto|cuánta|cuántos|cuántas|cuál|quiénes|cuáles|cómo|adónde|porqué|quien|que|donde|cuando|cuanto|cuanta|cuantos|cuantas|cual|quienes|cuales|como|adonde|porque|wer|welche|welcher|wen|wem|welchen|welchem|wessen|was|welches|warum|weshalb|weswegen|wieso|wie|wofür|wofuer|wozu|womit|wodurch|worum|worüber|worueber|wobei|wovon|wo|wohin|woher|woran|worin|worauf|worunter|wovor|wohinter|wann|wan|wieviele|wieviel|wievele|wievievel)$/=word !>> /^l-acl.*$/ $ /t-(?:PRON|DET|ADV|ADJ)/=postag"
+    tregex: "/w-.*-(?:האם|מה|היכן|למה|איך|כמה|מי|מה|מתי|איפה|אילו|what|when|who|where|which|how|whom|whose|why|quién|qué|dónde|cuándo|cuánto|cuánta|cuántos|cuántas|cuál|quiénes|cuáles|cómo|adónde|porqué|quien|que|donde|cuando|cuanto|cuanta|cuantos|cuantas|cual|quienes|cuales|como|adonde|porque|wer|welche|welcher|wen|wem|welchen|welchem|wessen|was|welches|warum|weshalb|weswegen|wieso|wie|wofür|wofuer|wozu|womit|wodurch|worum|worüber|worueber|wobei|wovon|wo|wohin|woher|woran|worin|worauf|worunter|wovor|wohinter|wann|wan|wieviele|wieviel|wievele|wievievel)$/=word !>> /^l-acl.*$/ $ /t-(?:PRON|DET|ADV|ADJ|QW)/=postag"
     transformation {
       target: "postag"
       action: CHANGE_LABEL 
@@ -88,7 +88,7 @@ rulegroup {
 	# "when" did aldi originate?
     # change the dependency relation of "when" to "advmod".
     # (l-root w-4-originate t-VERB (l-mark w-1-when t-ADV) (l-aux w-2-did t-AUX) (l-nsubj w-3-aldi t-PROPN) (l-punct w-5-? t-PUNCT))
-    tregex: "/^l-mark$/=mark  < (/w-.*-(?:what|when|who|where|which|how|whom|whose|why|quién|qué|dónde|cuándo|cuánto|cuánta|cuántos|cuántas|cuál|quiénes|cuáles|cómo|adónde|porqué|quien|que|donde|cuando|cuanto|cuanta|cuantos|cuantas|cual|quienes|cuales|como|adonde|porque|wer|welche|welcher|wen|wem|welchen|welchem|wessen|was|welches|warum|weshalb|weswegen|wieso|wie|wofür|wofuer|wozu|womit|wodurch|worum|worüber|worueber|wobei|wovon|wo|wohin|woher|woran|worin|worauf|worunter|wovor|wohinter|wann|wan|wieviele|wieviel|wievele|wievievel)$/=qword $ /t-(?:PRON|DET|ADV|ADJ).*$/) > /^l-root$/"
+    tregex: "/^l-mark$/=mark  < (/w-.*-(?:האם|מה|היכן|למה|איך|כמה|מי|מה|מתי|איפה|what|when|who|where|which|how|whom|whose|why|quién|qué|dónde|cuándo|cuánto|cuánta|cuántos|cuántas|cuál|quiénes|cuáles|cómo|adónde|porqué|quien|que|donde|cuando|cuanto|cuanta|cuantos|cuantas|cual|quienes|cuales|como|adonde|porque|wer|welche|welcher|wen|wem|welchen|welchem|wessen|was|welches|warum|weshalb|weswegen|wieso|wie|wofür|wofuer|wozu|womit|wodurch|worum|worüber|worueber|wobei|wovon|wo|wohin|woher|woran|worin|worauf|worunter|wovor|wohinter|wann|wan|wieviele|wieviel|wievele|wievievel)$/=qword $ /t-(?:PRON|DET|ADV|ADJ).*$/) > /^l-root$/"
     transformation {
       target: "mark"
       action: CHANGE_LABEL 
@@ -231,6 +231,7 @@ rulegroup {
       child: "v-{originword}"
     }
   }
+
   rule {
     name: "nsubj extraction"
     priority: 5
@@ -333,6 +334,85 @@ rulegroup {
     }
   }
 }
+
+rulegroup {
+  name: "hebrew rules"
+    rule {
+        name: "HE definitive determiner"
+        priority: 1
+        tregex: "/^l-det:def$/=relation"
+        transformation {
+          target: "relation"
+          action: CHANGE_LABEL
+          label: "l-det"
+        }
+      }
+      rule {
+              name: "HE compound related"
+              priority: 1
+              tregex: "/^l-compound:(smixut|affix)/=relation"
+              transformation {
+                target: "relation"
+                action: CHANGE_LABEL
+                label: "l-compound"
+              }
+            }
+            rule {
+                    name: "HE flat"
+                    priority: 1
+                    tregex: "/^l-flat:name/=relation"
+                    transformation {
+                    target: "relation"
+                    action: CHANGE_LABEL
+                    label: "l-compound"
+                  }
+           }
+    rule {
+            name: "HE mark"
+            priority: 1
+            tregex: "/^l-mark:q/=relation"
+            transformation {
+                target: "relation"
+                action: CHANGE_LABEL
+                label: "l-mark"
+                }
+     }
+     rule {
+           name: "HE case genitive accusative"
+                  priority: 1
+                  tregex: "/^l-case:.*$/=relation"
+                  transformation {
+                    target: "relation"
+                    action: CHANGE_LABEL
+                    label: "l-case"
+                  }
+      }
+      rule {
+                 name: "HE subject copular"
+                        priority: 1
+                        tregex: "/^l-nsubj:cop$/=relation"
+                        transformation {
+                          target: "relation"
+                          action: CHANGE_LABEL
+                          label: "l-nsubj"
+                        }
+            }
+
+        rule {
+        # incorrect, need to figure this out
+                   name: "HE obj to direct obj"
+                          priority: 1
+                          tregex: "/^l-obj/=relation"
+                          transformation {
+                            target: "relation"
+                            action: CHANGE_LABEL
+                            label: "l-dobj"
+                          }
+              }
+       # more rules to add: obl (oblique)
+       # see https://universaldependencies.org/he/index.html
+}
+
 rulegroup {
   name: "xcomp constructions"    
   priority: 1
