@@ -1,0 +1,284 @@
+package deplambda.others;
+
+import com.google.common.base.Joiner;
+import com.google.common.base.Splitter;
+import com.google.common.collect.*;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import deplambda.util.Sentence;
+import edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.IndexedWord;
+import edu.stanford.nlp.semgraph.SemanticGraph;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.ud.CoNLLUDocumentReader;
+
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class HebConlluToPipelineInput {
+
+
+    private static final String FILE_PATH = "/Users/mike/Developer/github/HebUDepLambda/1.conllu";
+
+    private static final Gson gson = new Gson();
+
+    private static class Entity {
+
+        public Entity(String phrase, int start, int end, int index) {
+            this.phrase = phrase;
+            this.start = start;
+            this.end = end;
+            this.index = index;
+        }
+
+        @Override
+        public String toString(){
+            return "(" + Joiner.on(',').join(phrase, start, end, index) +  ")";
+        }
+
+
+        String phrase;
+        int start;
+        int end;
+        int index;
+    }
+
+    private static class Word {
+        public Word(String word, String lemma, String pos, String ner, int index, int head, String dep, String lang) {
+            this.word = word;
+            this.lemma = lemma;
+            this.pos = pos;
+            this.ner = ner;
+            this.index = index;
+            this.head = head;
+            this.dep = dep;
+            this.lang = lang;
+        }
+
+        @Override
+        public String toString(){
+            return "(" + word + "," + index + ")";
+        }
+
+        String word;
+        String lemma;
+        String pos;
+        String ner;
+        int index;
+        int head;
+        String dep;
+        String lang;
+    }
+
+
+    private static final class SentenceInternal {
+        String sentence;
+        List<Word> words;
+        List<Entity> entities;
+        public SentenceInternal(String sentence, List<Word> words, List<Entity> entities) {
+            this.sentence = sentence;
+            this.words = words;
+            this.entities = entities;
+        }
+    }
+
+    public static void main(String args[]) throws IOException {
+        //864
+        Integer sentId = null;
+
+        if (args.length > 0 ) {
+            sentId = Integer.valueOf(args[0]);
+        } else {
+            sentId = 864;
+        }
+        CoNLLUDocumentReader reader = new CoNLLUDocumentReader();
+        Iterator<SemanticGraph> it = reader.getIterator(IOUtils.readerFromString(FILE_PATH));
+
+//        JsonObject jsonObject = gson.fromJson(gson.toJson(sentenceInternal), JsonObject.class);
+        int id = 0;
+        while (it.hasNext()) {
+
+            SemanticGraph sg = it.next();
+
+            List<Word> words = new ArrayList<>();
+            if (sentId != null && ++id != sentId) {
+//            if (!sg.toRecoveredSentenceStringWithIndexMarking().contains("להתעלות")
+//            ||  !sg.toRecoveredSentenceStringWithIndexMarking().contains("מוטלו")
+//            ) {
+                continue;
+            }
+
+            Multimap<String, Word> entities = LinkedListMultimap.create();
+            for (IndexedWord iw : sg.vertexListSorted()) {
+
+                String misc = iw.get(CoreAnnotations.CoNLLUMisc.class);
+                Map<String, String> split = Splitter.on('|').withKeyValueSeparator('=').split(misc);
+                String ner = split.get("ner_escaped");
+                Word word = new Word(iw.word(),
+                        iw.lemma(),
+                        iw.tag(),
+                        "O",
+                        iw.index(),
+                        iw.get(CoreAnnotations.CoNLLDepParentIndexAnnotation.class),
+                        iw.get(CoreAnnotations.CoNLLDepTypeAnnotation.class),
+                        "he");
+                // filter nested entities for now
+                if (!"_".equals(ner) && !ner.contains("~")) {
+                    word.ner = ner;
+                    entities.put(ner, word);
+                }
+
+
+                words.add(word);
+//                System.out.print(word + " ");
+//                System.out.println(Arrays.toString(misc.split("\\|")));
+            }
+            String sentence = sg.toRecoveredSentenceString();
+//            System.out.println(sentence);
+            List<Entity> entityList = new ArrayList<>();
+            if (!entities.isEmpty()) {
+//                System.out.println("ENTITIES MMAP: " + entities);
+                // preprocess for nested entities
+
+//                mergeNestedEntities(entities);
+
+                for (String key : entities.keySet()) {
+                    if (key.endsWith("]")) {
+                        // all entries for key are one entity
+                        List<Word> wordsForE = ((LinkedListMultimap)entities).get(key);
+                        String phrase = wordsForE.stream().map(w -> w.word).collect(Collectors.joining(" "));
+                        Entity entity = new Entity(phrase, wordsForE.get(0).index - 1, wordsForE.get(wordsForE.size() - 1).index - 1, wordsForE.get(wordsForE.size() - 1).index - 1);
+                        entityList.add(entity);
+                    } else {
+                        // each entry is a single entity
+                        for (Word word : entities.get(key)) {
+                            Entity entity = new Entity(word.word, word.index - 1, word.index - 1, word.index -1);
+                            entityList.add(entity);
+                        }
+                    }
+                }
+//                System.out.println("INFERRED: " + entityList);
+//                System.out.println(sentence);
+            }
+
+
+            SentenceInternal sentenceInternal = new SentenceInternal(sentence, words, entityList);
+            JsonObject jsonObject = gson.toJsonTree(sentenceInternal).getAsJsonObject();
+//            Sentence s = new Sentence(jsonObject);
+
+            System.out.println(gson.toJson(jsonObject));
+
+//            break;
+//            Sentence sentence = new Sentence(
+//            System.out.println(it.next());
+        }
+
+
+
+    }
+
+    private static Collection<Word> unpack(String ent, Multimap<String, Word> entities, Map<String, Collection<Word>> unpackedEnts) {
+
+        Collection<Word> entWords = entities.get(ent);
+
+        if (!ent.contains("~")) {
+//            System.out.println("Terminal " + ent);
+            if (entWords.isEmpty()) {
+//                System.out.println("terminal entity " + ent + " has no words");
+                return ImmutableSet.of(new Word("X", "X", "", "", 1 , 3, "", ""));
+            }
+            return entWords;
+        }
+
+//        System.out.println("Non Terminal " + ent);
+
+        String nestedEnt = ent.substring(0, ent.lastIndexOf("~"));
+
+        if (unpackedEnts.containsKey(nestedEnt)) {
+            return Lists.newArrayList(Iterables.concat(entWords, unpackedEnts.get(nestedEnt)));
+        }
+
+        Collection<Word> unpacked = unpack(nestedEnt, entities, unpackedEnts);
+
+        return Lists.newArrayList(Iterables.concat(entWords, unpacked));
+    }
+
+
+
+
+    private static void mergeNestedEntities(Multimap<String, Word> entities) {
+
+        List<String> sortedByEntities = entities.keySet()
+                .stream()
+                .filter(key -> key.contains("~"))
+                .sorted(
+                new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                int c1 = o1.length() - o1.replace("~", "").length();
+                int c2 = o2.length() - o2.replace("~", "").length();
+                return c1 - c2;
+            }
+        }).collect(Collectors.toList());
+
+        if (sortedByEntities.isEmpty()) {
+            return;
+        }
+
+//        System.out.println(entities);
+
+        TreeMap<String, Collection<Word>> unpackedEnts = new TreeMap<>();
+
+        for (final String megaEnt : sortedByEntities) {
+//            System.out.println(megaEnt);
+            Collection<Word> unpacked = unpack(megaEnt, entities, unpackedEnts);
+            unpackedEnts.put(megaEnt, unpacked);
+            entities.removeAll(megaEnt);
+//            System.out.println(unpacked);
+        }
+
+        NavigableSet<String> entsByLength = ImmutableSortedSet.copyOf(unpackedEnts.descendingKeySet());
+
+        for (String unpackedEnt : entsByLength) {
+            handleHigher(unpackedEnts, entsByLength, unpackedEnt);
+            handleLower(unpackedEnts, entsByLength, unpackedEnt);
+        }
+
+//        System.out.println(unpackedEnts);
+//        System.out.println(entities);
+    }
+
+    private static void handleLower(TreeMap<String, Collection<Word>> unpackedEnts, NavigableSet<String> entsByLength, String unpackedEnt) {
+        String lower = entsByLength.lower(unpackedEnt);
+        if (lower == null || lower.equals(unpackedEnt)) {
+            return;
+        }
+        if (unpackedEnt.substring(0, unpackedEnt.lastIndexOf("~")).equals(lower)) {
+            unpackedEnts.remove(lower);
+        }
+    }
+
+    private static void handleHigher(TreeMap<String, Collection<Word>> unpackedEnts, NavigableSet<String> entsByLength, String unpackedEnt) {
+        String higher = entsByLength.higher(unpackedEnt);
+        if (higher == null || higher.equals(unpackedEnt)) {
+            return;
+        }
+
+        if (higher.substring(0, higher.lastIndexOf("~")).equals(unpackedEnt.substring(0, unpackedEnt.lastIndexOf("~")))) {
+            // merge ents
+            Collection<Word> words1 = unpackedEnts.get(higher);
+            Collection<Word> words2 = unpackedEnts.get(unpackedEnt);
+            if (words1 == null || words2 == null) {
+                return;
+            }
+            Collection<Word> wordsMerged = ImmutableSet.copyOf(Iterables.concat(words1, words2));
+            unpackedEnts.put(unpackedEnt, wordsMerged);
+            unpackedEnts.remove(higher);
+        }
+    }
+
+
+}

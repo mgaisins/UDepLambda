@@ -754,3 +754,276 @@
 7773 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-10-made:u $0) (exists:ex $3:<a,e> (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (and:c (p_TYPE_w-11-ratatouille:u $3) (p_EVENT_w-11-ratatouille:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $5))) (and:c (and:c (p_TYPE_w-14-nemo:u $4) (p_EVENT_w-14-nemo:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT_w-13-finding:u $4)) (p_CONJ:tri $2 $3 $4)))) (p_EVENT.ENTITY_arg2:b $0 $2))) (and:c (and:c (p_TYPE_w-1-pixar:u $1) (p_EVENT_w-1-pixar:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (exists:ex $6:<a,e> (and:c (and:c (and:c (and:c (p_TYPE_w-4-company:u $1) (p_EVENT_w-4-company:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EQUAL:b $1 v-w-4-company:v)) (p_EMPTY:u $1)) (exists:ex $7:<a,e> (and:c (and:c (exists:ex $8:<a,e> (and:c (exists:ex $9:<a,e> (and:c (p_EVENT_w-8-acquired:u $6) (p_EMPTY:u $9) (p_EVENT.ENTITY_arg2:b $6 $9))) (p_EQUAL:b $8 v-w-4-company:v) (p_EVENT.ENTITY_arg2:b $6 $8))) (p_EVENTMOD_w-7-recently:u $6)) (p_TYPE_w-6-disney:u $7) (p_EVENT.ENTITY_arg1:b $6 $7)))))) (p_EVENT.ENTITY_arg1:b $0 $1))))
 7773 [pool-1-thread-1] DEBUG: 
 
+7716 [pool-1-thread-1] DEBUG: (l-det w-6-university w-5-the)
+7718 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)))
+7719 [pool-1-thread-1] DEBUG: 
+
+7719 [pool-1-thread-1] DEBUG: (l-case w-8-edinburgh w-7-of)
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7719 [pool-1-thread-1] DEBUG: 
+
+7719 [pool-1-thread-1] DEBUG: (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of))
+7719 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))))))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+7720 [pool-1-thread-1] DEBUG: 
+
+7720 [pool-1-thread-1] DEBUG: (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+7720 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+7721 [pool-1-thread-1] DEBUG: 
+
+7721 [pool-1-thread-1] DEBUG: (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at))
+7723 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-4-at:b $2 $3))))))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENT_w-3-studied:u $0))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $2:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $1) (p_EVENT_w-6-university:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EMPTY:u $1)) (and:c (p_TYPE_w-8-edinburgh:u $2) (p_EVENT_w-8-edinburgh:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $1 $2))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $1))))
+7724 [pool-1-thread-1] DEBUG: 
+
+7724 [pool-1-thread-1] DEBUG: (l-case w-10-1825 w-9-in)
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+7724 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7724 [pool-1-thread-1] DEBUG: 
+
+7724 [pool-1-thread-1] DEBUG: (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in))
+7725 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-9-in:b $2 $3))))))
+7725 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $2:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $1) (p_EVENT_w-6-university:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EMPTY:u $1)) (and:c (p_TYPE_w-8-edinburgh:u $2) (p_EVENT_w-8-edinburgh:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $1 $2))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $1))))
+7725 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7725 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $3:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $2) (p_EVENT_w-6-university:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EMPTY:u $2)) (and:c (p_TYPE_w-8-edinburgh:u $3) (p_EVENT_w-8-edinburgh:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $2))) (and:c (p_TYPE_w-10-1825:u $1) (p_EVENT_w-10-1825:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $1))))
+7725 [pool-1-thread-1] DEBUG: 
+
+7725 [pool-1-thread-1] DEBUG: (l-compound w-2-darwin w-1-charles)
+7725 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPE_w-1-charles:u $0))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPE_w-1-charles:u $0)))
+7726 [pool-1-thread-1] DEBUG: 
+
+7726 [pool-1-thread-1] DEBUG: (l-nsubj (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in)) (l-compound w-2-darwin w-1-charles))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_arg1:b $2 $3))))))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $3:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $2) (p_EVENT_w-6-university:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EMPTY:u $2)) (and:c (p_TYPE_w-8-edinburgh:u $3) (p_EVENT_w-8-edinburgh:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $2))) (and:c (p_TYPE_w-10-1825:u $1) (p_EVENT_w-10-1825:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $1))))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPE_w-1-charles:u $0)))
+7726 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+7726 [pool-1-thread-1] DEBUG: 
+
+7727 [pool-1-thread-1] DEBUG: (l-punct (l-nsubj (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in)) (l-compound w-2-darwin w-1-charles)) w-11-.)
+7727 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+7727 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+7727 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+7727 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+7727 [pool-1-thread-1] DEBUG: 
+
+8571 [pool-1-thread-1] DEBUG: (l-det w-6-university w-5-the)
+8572 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+8573 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8573 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+8573 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)))
+8573 [pool-1-thread-1] DEBUG: 
+
+8573 [pool-1-thread-1] DEBUG: (l-case w-8-edinburgh w-7-of)
+8573 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+8573 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8574 [pool-1-thread-1] DEBUG: 
+
+8574 [pool-1-thread-1] DEBUG: (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))))))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-8-edinburgh:u $0) (p_EVENT_w-8-edinburgh:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+8574 [pool-1-thread-1] DEBUG: 
+
+8574 [pool-1-thread-1] DEBUG: (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)
+8574 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+8575 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+8575 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+8575 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+8575 [pool-1-thread-1] DEBUG: 
+
+8575 [pool-1-thread-1] DEBUG: (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at))
+8577 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-4-at:b $2 $3))))))
+8577 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENT_w-3-studied:u $0))
+8577 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $0) (p_EVENT_w-6-university:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_EMPTY:u $0)) (and:c (p_TYPE_w-8-edinburgh:u $1) (p_EVENT_w-8-edinburgh:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $0 $1))))
+8577 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $2:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $1) (p_EVENT_w-6-university:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EMPTY:u $1)) (and:c (p_TYPE_w-8-edinburgh:u $2) (p_EVENT_w-8-edinburgh:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $1 $2))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $1))))
+8577 [pool-1-thread-1] DEBUG: 
+
+8577 [pool-1-thread-1] DEBUG: (l-case w-10-1825 w-9-in)
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8578 [pool-1-thread-1] DEBUG: 
+
+8578 [pool-1-thread-1] DEBUG: (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nmod.w-9-in:b $2 $3))))))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $2:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $1) (p_EVENT_w-6-university:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EMPTY:u $1)) (and:c (p_TYPE_w-8-edinburgh:u $2) (p_EVENT_w-8-edinburgh:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $1 $2))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $1))))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-10-1825:u $0) (p_EVENT_w-10-1825:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8578 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $3:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $2) (p_EVENT_w-6-university:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EMPTY:u $2)) (and:c (p_TYPE_w-8-edinburgh:u $3) (p_EVENT_w-8-edinburgh:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $2))) (and:c (p_TYPE_w-10-1825:u $1) (p_EVENT_w-10-1825:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $1))))
+8578 [pool-1-thread-1] DEBUG: 
+
+8578 [pool-1-thread-1] DEBUG: (l-compound w-2-darwin w-1-charles)
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPE_w-1-charles:u $0))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPE_w-1-charles:u $0)))
+8579 [pool-1-thread-1] DEBUG: 
+
+8579 [pool-1-thread-1] DEBUG: (l-nsubj (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in)) (l-compound w-2-darwin w-1-charles))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_arg1:b $2 $3))))))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $3:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $2) (p_EVENT_w-6-university:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EMPTY:u $2)) (and:c (p_TYPE_w-8-edinburgh:u $3) (p_EVENT_w-8-edinburgh:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $2 $3))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $2))) (and:c (p_TYPE_w-10-1825:u $1) (p_EVENT_w-10-1825:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $1))))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-2-darwin:u $0) (p_EVENT_w-2-darwin:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPE_w-1-charles:u $0)))
+8579 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+8580 [pool-1-thread-1] DEBUG: 
+
+8580 [pool-1-thread-1] DEBUG: (l-punct (l-nsubj (l-nmod (l-nmod w-3-studied (l-case (l-nmod (l-det w-6-university w-5-the) (l-case w-8-edinburgh w-7-of)) w-4-at)) (l-case w-10-1825 w-9-in)) (l-compound w-2-darwin w-1-charles)) w-11-.)
+8580 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+8580 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+8580 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+8580 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-studied:u $0) (exists:ex $4:<a,e> (and:c (and:c (and:c (p_TYPE_w-6-university:u $3) (p_EVENT_w-6-university:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EMPTY:u $3)) (and:c (p_TYPE_w-8-edinburgh:u $4) (p_EVENT_w-8-edinburgh:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-nmod.w-7-of:b $3 $4))) (p_EVENT.ENTITY_l-nmod.w-4-at:b $0 $3))) (and:c (p_TYPE_w-10-1825:u $2) (p_EVENT_w-10-1825:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-nmod.w-9-in:b $0 $2))) (and:c (and:c (p_TYPE_w-2-darwin:u $1) (p_EVENT_w-2-darwin:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPE_w-1-charles:u $1)) (p_EVENT.ENTITY_arg1:b $0 $1))))
+8580 [pool-1-thread-1] DEBUG: 
+
+977 [pool-1-thread-1] DEBUG: (l-cc w-16-משמשים w-14-אך)
+980 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3))))))
+982 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENT_w-16-משמשים:u $0))
+982 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+982 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $1))))
+982 [pool-1-thread-1] DEBUG: 
+
+982 [pool-1-thread-1] DEBUG: (l-amod w-17-עובדים w-18-שכירים)
+983 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-17-עובדים:u $0) (p_EVENT_w-17-עובדים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPEMOD_w-18-שכירים:u $0))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-17-עובדים:u $0) (p_EVENT_w-17-עובדים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-18-שכירים:u $0)))
+983 [pool-1-thread-1] DEBUG: 
+
+983 [pool-1-thread-1] DEBUG: (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)
+983 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (p_TYPE_w-17-עובדים:u $0) (p_EVENT_w-17-עובדים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-18-שכירים:u $0)))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPEMOD_w-19-זולים:u $0))
+983 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $0) (p_EVENT_w-17-עובדים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-18-שכירים:u $0)) (p_TYPEMOD_w-19-זולים:u $0)))
+983 [pool-1-thread-1] DEBUG: 
+
+984 [pool-1-thread-1] DEBUG: (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים))
+991 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_arg2:b $2 $3))))))
+991 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $1))))
+991 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $0) (p_EVENT_w-17-עובדים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-18-שכירים:u $0)) (p_TYPEMOD_w-19-זולים:u $0)))
+991 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $2))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $1) (p_EVENT_w-17-עובדים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-18-שכירים:u $1)) (p_TYPEMOD_w-19-זולים:u $1)) (p_EVENT.ENTITY_arg2:b $0 $1))))
+991 [pool-1-thread-1] DEBUG: 
+
+991 [pool-1-thread-1] DEBUG: (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)
+992 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (and:c ($0 $2) ($1 $2)))))
+992 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $2))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $1) (p_EVENT_w-17-עובדים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-18-שכירים:u $1)) (p_TYPEMOD_w-19-זולים:u $1)) (p_EVENT.ENTITY_arg2:b $0 $1))))
+992 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENTMOD_w-15-למעשה:u $0))
+992 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $2))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $1) (p_EVENT_w-17-עובדים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-18-שכירים:u $1)) (p_TYPEMOD_w-19-זולים:u $1)) (p_EVENT.ENTITY_arg2:b $0 $1))) (p_EVENTMOD_w-15-למעשה:u $0)))
+992 [pool-1-thread-1] DEBUG: 
+
+992 [pool-1-thread-1] DEBUG: (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה))
+993 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (exists:ex $4:<a,e> (and:c ($0 $3) ($1 $4) (p_CONJ:tri $2 $3 $4)))))))
+993 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENT_w-10-נרשמים:u $0))
+993 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-16-משמשים:u $0) (p_EMPTY:u $2))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $1) (p_EVENT_w-17-עובדים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-18-שכירים:u $1)) (p_TYPEMOD_w-19-זולים:u $1)) (p_EVENT.ENTITY_arg2:b $0 $1))) (p_EVENTMOD_w-15-למעשה:u $0)))
+993 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (exists:ex $2:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $1) (and:c (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (p_EVENT_w-16-משמשים:u $2) (p_EMPTY:u $4))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $3) (p_EVENT_w-17-עובדים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_TYPEMOD_w-18-שכירים:u $3)) (p_TYPEMOD_w-19-זולים:u $3)) (p_EVENT.ENTITY_arg2:b $2 $3))) (p_EVENTMOD_w-15-למעשה:u $2)) (p_CONJ:tri $0 $1 $2)))))
+993 [pool-1-thread-1] DEBUG: 
+
+993 [pool-1-thread-1] DEBUG: (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם)
+993 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_arg1:b $2 $3))))))
+994 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (exists:ex $2:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $1) (and:c (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (p_EVENT_w-16-משמשים:u $2) (p_EMPTY:u $4))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $3) (p_EVENT_w-17-עובדים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_TYPEMOD_w-18-שכירים:u $3)) (p_TYPEMOD_w-19-זולים:u $3)) (p_EVENT.ENTITY_arg2:b $2 $3))) (p_EVENTMOD_w-15-למעשה:u $2)) (p_CONJ:tri $0 $1 $2)))))
+994 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPE_w-9-הם:u $0))
+994 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+994 [pool-1-thread-1] DEBUG: 
+
+994 [pool-1-thread-1] DEBUG: (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,)
+994 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+994 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+995 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+995 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+995 [pool-1-thread-1] DEBUG: 
+
+995 [pool-1-thread-1] DEBUG: (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש)
+995 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+995 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+995 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+996 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+996 [pool-1-thread-1] DEBUG: 
+
+996 [pool-1-thread-1] DEBUG: (l-case w-12-מתנדבים w-11-כ)
+996 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+996 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-12-מתנדבים:u $0) (p_EVENT_w-12-מתנדבים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+996 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+996 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-12-מתנדבים:u $0) (p_EVENT_w-12-מתנדבים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+996 [pool-1-thread-1] DEBUG: 
+
+996 [pool-1-thread-1] DEBUG: (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ))
+997 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-obl:b $2 $3))))))
+997 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (exists:ex $3:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $2) (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (p_EVENT_w-16-משמשים:u $3) (p_EMPTY:u $5))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $4) (p_EVENT_w-17-עובדים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_TYPEMOD_w-18-שכירים:u $4)) (p_TYPEMOD_w-19-זולים:u $4)) (p_EVENT.ENTITY_arg2:b $3 $4))) (p_EVENTMOD_w-15-למעשה:u $3)) (p_CONJ:tri $0 $2 $3)))) (p_TYPE_w-9-הם:u $1) (p_EVENT.ENTITY_arg1:b $0 $1))))
+997 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-12-מתנדבים:u $0) (p_EVENT_w-12-מתנדבים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+997 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (exists:ex $4:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $3) (and:c (exists:ex $5:<a,e> (and:c (exists:ex $6:<a,e> (and:c (p_EVENT_w-16-משמשים:u $4) (p_EMPTY:u $6))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $5) (p_EVENT_w-17-עובדים:u $5) (p_EVENT.ENTITY_arg0:b $5 $5)) (p_TYPEMOD_w-18-שכירים:u $5)) (p_TYPEMOD_w-19-זולים:u $5)) (p_EVENT.ENTITY_arg2:b $4 $5))) (p_EVENTMOD_w-15-למעשה:u $4)) (p_CONJ:tri $0 $3 $4)))) (p_TYPE_w-9-הם:u $2) (p_EVENT.ENTITY_arg1:b $0 $2))) (and:c (p_TYPE_w-12-מתנדבים:u $1) (p_EVENT_w-12-מתנדבים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-obl:b $0 $1))))
+997 [pool-1-thread-1] DEBUG: 
+
+997 [pool-1-thread-1] DEBUG: (l-advcl w-3-מגיעים (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ)))
+998 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.EVENT_l-advcl:b $2 $3))))))
+998 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EVENT_w-3-מגיעים:u $0))
+998 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (exists:ex $4:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $3) (and:c (exists:ex $5:<a,e> (and:c (exists:ex $6:<a,e> (and:c (p_EVENT_w-16-משמשים:u $4) (p_EMPTY:u $6))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $5) (p_EVENT_w-17-עובדים:u $5) (p_EVENT.ENTITY_arg0:b $5 $5)) (p_TYPEMOD_w-18-שכירים:u $5)) (p_TYPEMOD_w-19-זולים:u $5)) (p_EVENT.ENTITY_arg2:b $4 $5))) (p_EVENTMOD_w-15-למעשה:u $4)) (p_CONJ:tri $0 $3 $4)))) (p_TYPE_w-9-הם:u $2) (p_EVENT.ENTITY_arg1:b $0 $2))) (and:c (p_TYPE_w-12-מתנדבים:u $1) (p_EVENT_w-12-מתנדבים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-obl:b $0 $1))))
+998 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (exists:ex $5:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $4) (and:c (exists:ex $6:<a,e> (and:c (exists:ex $7:<a,e> (and:c (p_EVENT_w-16-משמשים:u $5) (p_EMPTY:u $7))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $6) (p_EVENT_w-17-עובדים:u $6) (p_EVENT.ENTITY_arg0:b $6 $6)) (p_TYPEMOD_w-18-שכירים:u $6)) (p_TYPEMOD_w-19-זולים:u $6)) (p_EVENT.ENTITY_arg2:b $5 $6))) (p_EVENTMOD_w-15-למעשה:u $5)) (p_CONJ:tri $1 $4 $5)))) (p_TYPE_w-9-הם:u $3) (p_EVENT.ENTITY_arg1:b $1 $3))) (and:c (p_TYPE_w-12-מתנדבים:u $2) (p_EVENT_w-12-מתנדבים:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-obl:b $1 $2))) (p_EVENT.EVENT_l-advcl:b $0 $1))))
+998 [pool-1-thread-1] DEBUG: 
+
+998 [pool-1-thread-1] DEBUG: (l-nummod w-2-אנשים w-1-עשרות)
+998 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-nummod:b $2 $3))))))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-2-אנשים:u $0) (p_EVENT_w-2-אנשים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_TYPEMOD_w-1-עשרות:u $0))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $0) (p_EVENT_w-2-אנשים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-1-עשרות:u $1) (p_EVENT.ENTITY_l-nummod:b $0 $1))))
+999 [pool-1-thread-1] DEBUG: 
+
+999 [pool-1-thread-1] DEBUG: (l-nsubj (l-advcl w-3-מגיעים (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ))) (l-nummod w-2-אנשים w-1-עשרות))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_arg1:b $2 $3))))))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (exists:ex $5:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $4) (and:c (exists:ex $6:<a,e> (and:c (exists:ex $7:<a,e> (and:c (p_EVENT_w-16-משמשים:u $5) (p_EMPTY:u $7))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $6) (p_EVENT_w-17-עובדים:u $6) (p_EVENT.ENTITY_arg0:b $6 $6)) (p_TYPEMOD_w-18-שכירים:u $6)) (p_TYPEMOD_w-19-זולים:u $6)) (p_EVENT.ENTITY_arg2:b $5 $6))) (p_EVENTMOD_w-15-למעשה:u $5)) (p_CONJ:tri $1 $4 $5)))) (p_TYPE_w-9-הם:u $3) (p_EVENT.ENTITY_arg1:b $1 $3))) (and:c (p_TYPE_w-12-מתנדבים:u $2) (p_EVENT_w-12-מתנדבים:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-obl:b $1 $2))) (p_EVENT.EVENT_l-advcl:b $0 $1))))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $0) (p_EVENT_w-2-אנשים:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)) (p_TYPEMOD_w-1-עשרות:u $1) (p_EVENT.ENTITY_l-nummod:b $0 $1))))
+999 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (exists:ex $6:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $5) (and:c (exists:ex $7:<a,e> (and:c (exists:ex $8:<a,e> (and:c (p_EVENT_w-16-משמשים:u $6) (p_EMPTY:u $8))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $7) (p_EVENT_w-17-עובדים:u $7) (p_EVENT.ENTITY_arg0:b $7 $7)) (p_TYPEMOD_w-18-שכירים:u $7)) (p_TYPEMOD_w-19-זולים:u $7)) (p_EVENT.ENTITY_arg2:b $6 $7))) (p_EVENTMOD_w-15-למעשה:u $6)) (p_CONJ:tri $2 $5 $6)))) (p_TYPE_w-9-הם:u $4) (p_EVENT.ENTITY_arg1:b $2 $4))) (and:c (p_TYPE_w-12-מתנדבים:u $3) (p_EVENT_w-12-מתנדבים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-obl:b $2 $3))) (p_EVENT.EVENT_l-advcl:b $0 $2))) (exists:ex $9:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $1) (p_EVENT_w-2-אנשים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-1-עשרות:u $9) (p_EVENT.ENTITY_l-nummod:b $1 $9))) (p_EVENT.ENTITY_arg1:b $0 $1))))
+1000 [pool-1-thread-1] DEBUG: 
+
+1000 [pool-1-thread-1] DEBUG: (l-punct (l-nsubj (l-advcl w-3-מגיעים (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ))) (l-nummod w-2-אנשים w-1-עשרות)) w-20-.)
+1000 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+1000 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (exists:ex $6:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $5) (and:c (exists:ex $7:<a,e> (and:c (exists:ex $8:<a,e> (and:c (p_EVENT_w-16-משמשים:u $6) (p_EMPTY:u $8))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $7) (p_EVENT_w-17-עובדים:u $7) (p_EVENT.ENTITY_arg0:b $7 $7)) (p_TYPEMOD_w-18-שכירים:u $7)) (p_TYPEMOD_w-19-זולים:u $7)) (p_EVENT.ENTITY_arg2:b $6 $7))) (p_EVENTMOD_w-15-למעשה:u $6)) (p_CONJ:tri $2 $5 $6)))) (p_TYPE_w-9-הם:u $4) (p_EVENT.ENTITY_arg1:b $2 $4))) (and:c (p_TYPE_w-12-מתנדבים:u $3) (p_EVENT_w-12-מתנדבים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-obl:b $2 $3))) (p_EVENT.EVENT_l-advcl:b $0 $2))) (exists:ex $9:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $1) (p_EVENT_w-2-אנשים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-1-עשרות:u $9) (p_EVENT.ENTITY_l-nummod:b $1 $9))) (p_EVENT.ENTITY_arg1:b $0 $1))))
+1000 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+1000 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (exists:ex $6:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $5) (and:c (exists:ex $7:<a,e> (and:c (exists:ex $8:<a,e> (and:c (p_EVENT_w-16-משמשים:u $6) (p_EMPTY:u $8))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $7) (p_EVENT_w-17-עובדים:u $7) (p_EVENT.ENTITY_arg0:b $7 $7)) (p_TYPEMOD_w-18-שכירים:u $7)) (p_TYPEMOD_w-19-זולים:u $7)) (p_EVENT.ENTITY_arg2:b $6 $7))) (p_EVENTMOD_w-15-למעשה:u $6)) (p_CONJ:tri $2 $5 $6)))) (p_TYPE_w-9-הם:u $4) (p_EVENT.ENTITY_arg1:b $2 $4))) (and:c (p_TYPE_w-12-מתנדבים:u $3) (p_EVENT_w-12-מתנדבים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-obl:b $2 $3))) (p_EVENT.EVENT_l-advcl:b $0 $2))) (exists:ex $9:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $1) (p_EVENT_w-2-אנשים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-1-עשרות:u $9) (p_EVENT.ENTITY_l-nummod:b $1 $9))) (p_EVENT.ENTITY_arg1:b $0 $1))))
+1000 [pool-1-thread-1] DEBUG: 
+
+1001 [pool-1-thread-1] DEBUG: (l-case w-5-תאילנד w-4-מ)
+1001 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+1001 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-5-תאילנד:u $0) (p_EVENT_w-5-תאילנד:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1001 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+1001 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-5-תאילנד:u $0) (p_EVENT_w-5-תאילנד:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1001 [pool-1-thread-1] DEBUG: 
+
+1001 [pool-1-thread-1] DEBUG: (l-obl (l-punct (l-nsubj (l-advcl w-3-מגיעים (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ))) (l-nummod w-2-אנשים w-1-עשרות)) w-20-.) (l-case w-5-תאילנד w-4-מ))
+1001 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-obl:b $2 $3))))))
+1002 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (exists:ex $6:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $5) (and:c (exists:ex $7:<a,e> (and:c (exists:ex $8:<a,e> (and:c (p_EVENT_w-16-משמשים:u $6) (p_EMPTY:u $8))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $7) (p_EVENT_w-17-עובדים:u $7) (p_EVENT.ENTITY_arg0:b $7 $7)) (p_TYPEMOD_w-18-שכירים:u $7)) (p_TYPEMOD_w-19-זולים:u $7)) (p_EVENT.ENTITY_arg2:b $6 $7))) (p_EVENTMOD_w-15-למעשה:u $6)) (p_CONJ:tri $2 $5 $6)))) (p_TYPE_w-9-הם:u $4) (p_EVENT.ENTITY_arg1:b $2 $4))) (and:c (p_TYPE_w-12-מתנדבים:u $3) (p_EVENT_w-12-מתנדבים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_EVENT.ENTITY_l-obl:b $2 $3))) (p_EVENT.EVENT_l-advcl:b $0 $2))) (exists:ex $9:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $1) (p_EVENT_w-2-אנשים:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_TYPEMOD_w-1-עשרות:u $9) (p_EVENT.ENTITY_l-nummod:b $1 $9))) (p_EVENT.ENTITY_arg1:b $0 $1))))
+1002 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-5-תאילנד:u $0) (p_EVENT_w-5-תאילנד:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1002 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (exists:ex $6:<a,e> (exists:ex $7:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $6) (and:c (exists:ex $8:<a,e> (and:c (exists:ex $9:<a,e> (and:c (p_EVENT_w-16-משמשים:u $7) (p_EMPTY:u $9))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $8) (p_EVENT_w-17-עובדים:u $8) (p_EVENT.ENTITY_arg0:b $8 $8)) (p_TYPEMOD_w-18-שכירים:u $8)) (p_TYPEMOD_w-19-זולים:u $8)) (p_EVENT.ENTITY_arg2:b $7 $8))) (p_EVENTMOD_w-15-למעשה:u $7)) (p_CONJ:tri $3 $6 $7)))) (p_TYPE_w-9-הם:u $5) (p_EVENT.ENTITY_arg1:b $3 $5))) (and:c (p_TYPE_w-12-מתנדבים:u $4) (p_EVENT_w-12-מתנדבים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-obl:b $3 $4))) (p_EVENT.EVENT_l-advcl:b $0 $3))) (exists:ex $10:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $2) (p_EVENT_w-2-אנשים:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_TYPEMOD_w-1-עשרות:u $10) (p_EVENT.ENTITY_l-nummod:b $2 $10))) (p_EVENT.ENTITY_arg1:b $0 $2))) (and:c (p_TYPE_w-5-תאילנד:u $1) (p_EVENT_w-5-תאילנד:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-obl:b $0 $1))))
+1002 [pool-1-thread-1] DEBUG: 
+
+1002 [pool-1-thread-1] DEBUG: (l-case w-7-ישראל w-6-ל)
+1002 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> ($0 $2))))
+1003 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-7-ישראל:u $0) (p_EVENT_w-7-ישראל:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1003 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (p_EMPTY:u $0))
+1003 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-7-ישראל:u $0) (p_EVENT_w-7-ישראל:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1003 [pool-1-thread-1] DEBUG: 
+
+1003 [pool-1-thread-1] DEBUG: (l-obl (l-obl (l-punct (l-nsubj (l-advcl w-3-מגיעים (l-obl (l-mark (l-punct (l-nsubj (l-conj-verb w-10-נרשמים (l-advmod (l-dobj (l-cc w-16-משמשים w-14-אך) (l-amod (l-amod w-17-עובדים w-18-שכירים) w-19-זולים)) w-15-למעשה)) w-9-הם) w-13-,) w-8-כש) (l-case w-12-מתנדבים w-11-כ))) (l-nummod w-2-אנשים w-1-עשרות)) w-20-.) (l-case w-5-תאילנד w-4-מ)) (l-case w-7-ישראל w-6-ל))
+1003 [pool-1-thread-1] DEBUG: (lambda $0:<v,t> (lambda $1:<v,t> (lambda $2:<a,e> (exists:ex $3:<a,e> (and:c ($0 $2) ($1 $3) (p_EVENT.ENTITY_l-obl:b $2 $3))))))
+1003 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $4:<a,e> (and:c (exists:ex $5:<a,e> (and:c (exists:ex $6:<a,e> (exists:ex $7:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $6) (and:c (exists:ex $8:<a,e> (and:c (exists:ex $9:<a,e> (and:c (p_EVENT_w-16-משמשים:u $7) (p_EMPTY:u $9))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $8) (p_EVENT_w-17-עובדים:u $8) (p_EVENT.ENTITY_arg0:b $8 $8)) (p_TYPEMOD_w-18-שכירים:u $8)) (p_TYPEMOD_w-19-זולים:u $8)) (p_EVENT.ENTITY_arg2:b $7 $8))) (p_EVENTMOD_w-15-למעשה:u $7)) (p_CONJ:tri $3 $6 $7)))) (p_TYPE_w-9-הם:u $5) (p_EVENT.ENTITY_arg1:b $3 $5))) (and:c (p_TYPE_w-12-מתנדבים:u $4) (p_EVENT_w-12-מתנדבים:u $4) (p_EVENT.ENTITY_arg0:b $4 $4)) (p_EVENT.ENTITY_l-obl:b $3 $4))) (p_EVENT.EVENT_l-advcl:b $0 $3))) (exists:ex $10:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $2) (p_EVENT_w-2-אנשים:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_TYPEMOD_w-1-עשרות:u $10) (p_EVENT.ENTITY_l-nummod:b $2 $10))) (p_EVENT.ENTITY_arg1:b $0 $2))) (and:c (p_TYPE_w-5-תאילנד:u $1) (p_EVENT_w-5-תאילנד:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-obl:b $0 $1))))
+1004 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (and:c (p_TYPE_w-7-ישראל:u $0) (p_EVENT_w-7-ישראל:u $0) (p_EVENT.ENTITY_arg0:b $0 $0)))
+1004 [pool-1-thread-1] DEBUG: (lambda $0:<a,e> (exists:ex $1:<a,e> (and:c (exists:ex $2:<a,e> (and:c (exists:ex $3:<a,e> (and:c (exists:ex $4:<a,e> (and:c (p_EVENT_w-3-מגיעים:u $0) (exists:ex $5:<a,e> (and:c (exists:ex $6:<a,e> (and:c (exists:ex $7:<a,e> (exists:ex $8:<a,e> (and:c (p_EVENT_w-10-נרשמים:u $7) (and:c (exists:ex $9:<a,e> (and:c (exists:ex $10:<a,e> (and:c (p_EVENT_w-16-משמשים:u $8) (p_EMPTY:u $10))) (and:c (and:c (and:c (p_TYPE_w-17-עובדים:u $9) (p_EVENT_w-17-עובדים:u $9) (p_EVENT.ENTITY_arg0:b $9 $9)) (p_TYPEMOD_w-18-שכירים:u $9)) (p_TYPEMOD_w-19-זולים:u $9)) (p_EVENT.ENTITY_arg2:b $8 $9))) (p_EVENTMOD_w-15-למעשה:u $8)) (p_CONJ:tri $4 $7 $8)))) (p_TYPE_w-9-הם:u $6) (p_EVENT.ENTITY_arg1:b $4 $6))) (and:c (p_TYPE_w-12-מתנדבים:u $5) (p_EVENT_w-12-מתנדבים:u $5) (p_EVENT.ENTITY_arg0:b $5 $5)) (p_EVENT.ENTITY_l-obl:b $4 $5))) (p_EVENT.EVENT_l-advcl:b $0 $4))) (exists:ex $11:<a,e> (and:c (and:c (p_TYPE_w-2-אנשים:u $3) (p_EVENT_w-2-אנשים:u $3) (p_EVENT.ENTITY_arg0:b $3 $3)) (p_TYPEMOD_w-1-עשרות:u $11) (p_EVENT.ENTITY_l-nummod:b $3 $11))) (p_EVENT.ENTITY_arg1:b $0 $3))) (and:c (p_TYPE_w-5-תאילנד:u $2) (p_EVENT_w-5-תאילנד:u $2) (p_EVENT.ENTITY_arg0:b $2 $2)) (p_EVENT.ENTITY_l-obl:b $0 $2))) (and:c (p_TYPE_w-7-ישראל:u $1) (p_EVENT_w-7-ישראל:u $1) (p_EVENT.ENTITY_arg0:b $1 $1)) (p_EVENT.ENTITY_l-obl:b $0 $1))))
+1004 [pool-1-thread-1] DEBUG: 
+
